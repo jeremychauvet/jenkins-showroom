@@ -1,0 +1,23 @@
+configuration-as-code:
+  deprecated: warn
+  restricted: warn
+  unknown: warn
+  version: ONE
+
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
+  disableRememberMe: true
+  noUsageStatistics: true
+
+tool:
+  git:
+    installations:
+      - name: git
+        home: /usr/local/bin/git
+        
+unclassified:
+  themeManager:
+    disableUserThemes: true
+    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings        
+
+
