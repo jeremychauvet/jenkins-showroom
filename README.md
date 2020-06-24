@@ -9,6 +9,8 @@ This will :
 2. Add plugins you choose to install.
 3. Launch container and map volume and ports.
 
+> On first launch, you'll be ask to unlock Jenkins and eventually create the first admin user. 
+
 # How to add plugins.
 In Dockerfile, we use Cloudbee recommanded way to install plugin : `install-plugins.sh`
 
