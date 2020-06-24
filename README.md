@@ -1,7 +1,7 @@
-# Purpose.
+# Purpose
 TODO
 
-# How to install.
+# How to install
 At project root, launch the following command : `make start`
 
 This will :
@@ -11,7 +11,7 @@ This will :
 
 > On first launch, you'll be ask to unlock Jenkins and eventually create the first admin user. 
 
-# How to add plugins.
+# How to add plugins
 In Dockerfile, we use Cloudbee recommanded way to install plugin : `install-plugins.sh`
 
 You can add plugin id you want after the plugins already given. Then, launch command `make build` to build image and get and output like this : 
@@ -25,20 +25,7 @@ Step 1/3 : ARG JENKINS_VERSION
 Step 2/3 : FROM jenkins/jenkins:${JENKINS_VERSION}-slim
 2.241-slim: Pulling from jenkins/jenkins
 8559a31e96f4: Pull complete
-65306eca6b8e: Pull complete
-b8f37a6e9e9b: Pull complete
-33231475bae0: Pull complete
-f60ad690e877: Pull complete
-31988ca834e1: Pull complete
-e0d7172cfd67: Pull complete
-987b7c51e05d: Pull complete
-d48cadba45ce: Pull complete
-a3e2bec02245: Pull complete
-81771fdb9584: Pull complete
-2c8cbeab67ab: Pull complete
-18f9698c54a6: Pull complete
-5e3a46199dc8: Pull complete
-c9501964dc17: Pull complete
+[...]
 f68157dad2ff: Pull complete
 Digest: sha256:6703e16ae762c51b6d132844fdf08a87e80967c17de8b592a5ee69a429d5804c
 Status: Downloaded newer image for jenkins/jenkins:2.241-slim
@@ -72,27 +59,27 @@ Successfully built 5864c87171fa
 Successfully tagged jenkins:showroom
 ```
 
-# How to upgrade Jenkins version.
+# How to upgrade Jenkins version
 In Makefile, please change `JENKINS_VERSION` value to the desired.
 
-# Jenkins pros & cons.
+# Jenkins pros & cons
 ## Pros
 TODO
-## Cons.
+## Cons
 TODO
 
-# Recommandations.
-## Plugins.
+# Recommandations
+## Plugins
 TODO
-## Audits.
+## Audits
 TODO
-## Updates.
+## Updates
 TODO
 
-# Repository roadmap.
+# Repository roadmap
 Please check item "project" on github.
 
-# Usefull links.
+# Usefull links
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
 - Docker image : https://hub.docker.com/r/jenkins/jenkins/tags
