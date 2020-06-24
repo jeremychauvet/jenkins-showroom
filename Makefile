@@ -1,12 +1,17 @@
-.PHONY: start reset configure
+.PHONY: build start reset configure
 
-start:
-	docker-compose up -d --build
+JENKINS_VERSION=2.241
+
+build:
+	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
+
+start: build
+	docker-compose up -d
 
 reset: 
 	docker-compose down
 	rm -fr ./data
-	docker-compose up -d --build
+	start
 
 configure:
 	@cp ./configuration/jenkins.yml ./data/jenkins.yml
