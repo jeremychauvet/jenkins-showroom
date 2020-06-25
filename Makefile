@@ -14,5 +14,8 @@ reset:
 	start
 
 configure:
-	@cp ./configuration/jenkins.yml ./data/jenkins.yml
+	@mkdir -p ./data/casc_configs
+	@cp ./configuration/* ./data/casc_configs
+	docker-compose stop
+	docker-compose up -d
 	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"

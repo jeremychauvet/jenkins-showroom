@@ -1,20 +1,11 @@
-configuration-as-code:
-  deprecated: warn
-  restricted: warn
-  unknown: warn
-  version: ONE
-
 jenkins:
   systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
   disableRememberMe: true
   noUsageStatistics: true
-
-tool:
-  git:
-    installations:
-      - name: git
-        home: /usr/local/bin/git
-        
+configuration-as-code:
+  deprecated: warn
+  restricted: warn
+  unknown: warn
 unclassified:
   themeManager:
     disableUserThemes: true
