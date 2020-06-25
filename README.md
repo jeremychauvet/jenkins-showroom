@@ -79,6 +79,9 @@ TODO
 # Repository roadmap
 Please check item "project" on github.
 
+## Configuration as code
+Read more [here](./docs/casc/configuration-as-code.md)
+
 # Usefull links
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
