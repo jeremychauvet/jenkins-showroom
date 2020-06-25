@@ -15,8 +15,11 @@ make configure
 ```
 This action will copy configuration file
 
-On administration panel, you see a result like this : 
+On administration panel, you'll see a result like this : 
 ![Step 1 - Make sure plugin is available in administration panel](step1.png)
+
+If configuration is correctly loaded, you'll see :
+![Step 2 - Make sure configuration is loaded](step2.png)
 
 # Reference
 Reference can be display with the following URL : http://localhost/configuration-as-code/reference
