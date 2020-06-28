@@ -5,8 +5,7 @@ JENKINS_VERSION=2.241
 build:
 	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
 
-start: build
-	docker-compose up -d
+start: build configure
 
 reset: 
 	docker-compose down
@@ -18,4 +17,4 @@ configure:
 	@cp ./configuration/*.yml ./data/casc_configs
 	docker-compose stop
 	docker-compose up -d
-	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"
+	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"	
