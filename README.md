@@ -74,6 +74,9 @@ Successfully tagged jenkins:showroom
 # How to upgrade Jenkins version
 In Makefile, please change `JENKINS_VERSION` value to the desired.
 
+# Roadmap
+Roadmap can be found on Github : https://github.com/jeremychauvet/jenkins-showroom/projects/1
+
 # Usefull links
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
