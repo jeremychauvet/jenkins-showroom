@@ -13,8 +13,11 @@ reset:
 	start
 
 configure:
+	# Create Jenkins configuration folder and copy configuration into.
 	@mkdir -p ./data/casc_configs
 	@cp ./configuration/*.yml ./data/casc_configs
-	docker-compose stop
-	docker-compose up -d
-	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"	
+	@find ./configuration -iname "*.yml" -exec cp -- "{}" ./data/casc_configs \;
+	# Restart Jenkins to load configuration.
+	docker-compose restart jenkins
+	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"
+	

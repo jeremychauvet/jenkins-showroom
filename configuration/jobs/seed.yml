@@ -1,0 +1,16 @@
+jobs:
+    - script: >
+        multibranchPipelineJob('configuration-as-code') {
+            displayName('Job DSL Example Project')
+            branchSources {
+                git {
+                    id = 'configuration-as-code'
+                    remote('https://github.com/jenkinsci/configuration-as-code-plugin.git')
+                }
+            }
+            orphanedItemStrategy {
+                discardOldItems {
+                    numToKeep(5)
+                }
+            }
+        }

@@ -9,6 +9,4 @@ configuration-as-code:
 unclassified:
   themeManager:
     disableUserThemes: true
-    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings        
-
-
+    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings

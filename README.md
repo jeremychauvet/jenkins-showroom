@@ -1,5 +1,5 @@
 # Purpose
-TODO
+This showroom is a sandbox for testing new Jenkins concept and plugins, like configuration as code, job-dsl or fresh new "yml pipelines".
 
 # How to install
 At project root, launch the following command : `make start`
@@ -62,29 +62,18 @@ Successfully tagged jenkins:showroom
 # How to upgrade Jenkins version
 In Makefile, please change `JENKINS_VERSION` value to the desired.
 
-# Jenkins pros & cons
-## Pros
-TODO
-## Cons
-TODO
-
-# Recommandations
-## Plugins
-TODO
-## Audits
-TODO
-## Updates
-TODO
-
-# Repository roadmap
-Please check item "project" on github.
+# Showroom
+This section give you a list of plugins and concepts tested.
 
 ## Configuration as code
-Read more [here](./docs/casc/configuration-as-code.md)
+-> AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
+Read more [here](./docs/casc/README.md)
+
+## Job DSL
+-> Manage Job configuration with code and "configuration as code" plugin.
+Read more [here](./docs/job-dsl/README.md)
 
 # Usefull links
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
 - Docker image : https://hub.docker.com/r/jenkins/jenkins/tags
-
-Readme update : 06/24/20
