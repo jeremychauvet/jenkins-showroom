@@ -2,3 +2,4 @@ dark-theme
 configuration-as-code
 blueocean
 docker-plugin
+job-dsl
