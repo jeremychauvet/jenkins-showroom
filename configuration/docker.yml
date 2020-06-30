@@ -1,7 +1,7 @@
 jenkins:
   clouds:
     - docker:
-        name: "docker"
+        name: "docker-local-configuration"
         dockerApi:
           dockerHost:
             uri: "unix:///var/run/docker.sock"
@@ -9,9 +9,6 @@ jenkins:
           - labelString: "docker-agent"
             dockerTemplateBase:
               image: "jenkins/slave"
-              environmentsString: |
-                hello=world
-                foo=bar
             remoteFs: "/home/jenkins/agent"
             connector:
               attach:
