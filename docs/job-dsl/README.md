@@ -1,6 +1,6 @@
-# Job DSL.
+# Job DSL
 
-# Installation.
+# Installation
 First, start a Jenkins instance and search for "job-dsl" plugin on plugin manager.
 Official repository : https://plugins.jenkins.io/job-dsl/
 
@@ -9,10 +9,10 @@ Official repository : https://plugins.jenkins.io/job-dsl/
 # Purpose
 Like CASC plugin, this one allow us to manage our Jenkins instance with code too, but in "job creation" scope. It extends CASC plugin scope.
 
-# Create or load configuration.
+# Create or load configuration
 Configuration file is a YAML file. You have jobs sample in folder "configuration/jobs".
 
-# Load configuration.
+# Load configuration
 Please execute the following command at project root : 
 ```bash
 make configure

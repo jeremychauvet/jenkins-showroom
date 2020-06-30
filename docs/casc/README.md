@@ -1,6 +1,6 @@
-# Configuration as Code.
+# Configuration as Code
 
-# Installation.
+# Installation
 First, start a Jenkins instance and search for "Configuration as Code" plugin on plugin manager.
 Official repository : https://plugins.jenkins.io/configuration-as-code/
 
@@ -10,7 +10,7 @@ Official repository : https://plugins.jenkins.io/configuration-as-code/
 This plugin allow us to manage our Jenkins instance with code. No need to use interface to add SCM provider, user or credential.
 This improve global reliability of our CI/CD solution.
 
-# Create or load configuration.
+# Create or load configuration
 Configuration file is a YAML file. You have code samples at project root, folder "configuration".
 
 ## Jenkins configuration
@@ -19,7 +19,7 @@ Please add Jenkins related configuration at root of configuration folder.
 ## Jobs configuration
 You can create subfolder in configuration folder. Operation `make configure` will copy all yml files, including thoses in subfolders.
 
-# Load configuration.
+# Load configuration
 Please execute the following command at project root : 
 ```bash
 make configure

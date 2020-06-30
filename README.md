@@ -81,3 +81,4 @@ Roadmap can be found on Github : https://github.com/jeremychauvet/jenkins-showro
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
 - Docker image : https://hub.docker.com/r/jenkins/jenkins/tags
+- Pipeline syntax : https://www.jenkins.io/doc/book/pipeline/syntax/
