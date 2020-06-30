@@ -1,0 +1,16 @@
+jobs:
+    - script: >
+        multibranchPipelineJob('guardian-frontend') {
+            displayName('Guardian frontend')
+            branchSources {
+                git {
+                    id = 'configuration-as-code'
+                    remote('https://github.com/jeremychauvet/guardian-frontend')
+                }
+            }
+            orphanedItemStrategy {
+                discardOldItems {
+                    numToKeep(5)
+                }
+            }
+        }
