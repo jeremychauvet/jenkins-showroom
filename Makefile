@@ -5,7 +5,10 @@ JENKINS_VERSION=2.242
 build:
 	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
 
-start: build 
+start: build
+	# Clean stopped containers, old volumes.
+	docker system prune -f 
+	# Launch stack.
 	docker-compose up -d
 
 reset: 
