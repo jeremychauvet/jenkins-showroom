@@ -11,7 +11,7 @@ start: build
 reset: 
 	docker-compose down
 	rm -fr ./data
-	start
+	@echo "Docker stack and data folder wiped."
 
 configure:
 	# Create Jenkins configuration folder and copy configuration into.
