@@ -12,6 +12,10 @@ Read more [here](./docs/casc/README.md)
 
 Read more [here](./docs/job-dsl/README.md)
 
+## CLI
+-> Manage Jenkins in headless with Jenkins CLI.
+
+Read more [here](./docs/cli/README.md)
 
 # Installation
 At project root, launch the following command : `make start`
