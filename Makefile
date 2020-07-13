@@ -5,13 +5,16 @@ JENKINS_VERSION=2.242
 build:
 	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
 
-start: build 
+start: build
+	# Clean stopped containers, old volumes.
+	docker system prune -f 
+	# Launch stack.
 	docker-compose up -d
 
 reset: 
 	docker-compose down
 	rm -fr ./data
-	start
+	@echo "Docker stack and data folder wiped."
 
 configure:
 	# Create Jenkins configuration folder and copy configuration into.

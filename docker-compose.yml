@@ -8,8 +8,8 @@ services:
     image: jenkins:showroom
     ports:
       - '80:8080'
+      - '8081:8081'
       - '443:8443'
       - '50000:50000'
     volumes:
       - ./data/:/var/jenkins_home/
-      - /var/run/docker.sock:/var/run/docker.sock
