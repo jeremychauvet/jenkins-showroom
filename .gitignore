@@ -1,6 +1,9 @@
 # Do not commit Jenkins volume.
 data/
 
+# IDE.
+.idea
+
 # Jenkins CLI.
 jenkins-cli.jar
 
