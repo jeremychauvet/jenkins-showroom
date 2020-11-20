@@ -1,39 +1,49 @@
 # Jenkins showroom
 
-This repository is a sandbox for testing new Jenkins concepts and plugins. 
+This repository is a sandbox for testing new Jenkins concepts and plugins.
 
-## Configuration as code
+## Sub-projects
+
+### Configuration as code
+
 -> AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
 
 Read more [here](./docs/casc/README.md)
 
-## Job DSL
+### Job DSL
+
 -> Manage Job configuration with code and "configuration as code" plugin.
 
 Read more [here](./docs/job-dsl/README.md)
 
-## CLI
+### CLI
+
 -> Manage Jenkins in headless with Jenkins CLI.
 
 Read more [here](./docs/cli/README.md)
 
-# Installation
+## Installation
+
 At project root, launch the following command : `make start`
 
 This will :
+
 1. Download official Jenkins image set in Makefile (`JENKINS_VERSION`)
 2. Add plugins you choose to install.
 3. Launch container and map volume and ports.
 
 > On first launch, you'll be ask to unlock Jenkins and eventually create the first admin user. 
 
-# How to add plugins
+## How to
+
+### How to add plugins
+
 In Dockerfile, we use Cloudbee recommanded way to install plugin : `install-plugins.sh`
 
 You can add plugin id you want after the plugins already given. Then, launch command `make build` to build image and get and output like this : 
 
-```bash 
-jchauvet@macbookpro jenkins-showroom % make build            
+```bash
+jchauvet@macbookpro jenkins-showroom % make build
 docker-compose build --build-arg JENKINS_VERSION=2.241
 WARNING: The JENKINS_VERSION variable is not set. Defaulting to a blank string.
 Building jenkins
@@ -75,13 +85,16 @@ Successfully built 5864c87171fa
 Successfully tagged jenkins:showroom
 ```
 
-# How to upgrade Jenkins version
+### How to upgrade Jenkins version
+
 In Makefile, please change `JENKINS_VERSION` value to the desired.
 
-# Roadmap
+## Roadmap
+
 Roadmap can be found on Github : https://github.com/jeremychauvet/jenkins-showroom/projects/1
 
-# Usefull links
+## Usefull links
+
 - Jenkins changelog : https://www.jenkins.io/changelog/
 - Jenkins roadmap : https://www.jenkins.io/project/roadmap/
 - Docker image : https://hub.docker.com/r/jenkins/jenkins/tags
