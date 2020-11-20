@@ -4,3 +4,4 @@ blueocean
 docker-plugin
 job-dsl
 github
+promoted-builds
