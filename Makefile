@@ -1,15 +1,18 @@
-.PHONY: build start reset configure
+.PHONY: build start stop reset configure
 
 JENKINS_VERSION=2.267
 
 build:
 	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
 
-start: build
+start: configure build
 	# Clean stopped containers, old volumes.
 	docker system prune -f 
 	# Launch stack.
 	docker-compose up -d
+
+stop:
+	docker-compose down
 
 reset: 
 	docker-compose down
@@ -21,7 +24,5 @@ configure:
 	@mkdir -p ./data/casc_configs
 	@cp ./configuration/*.yml ./data/casc_configs
 	@find ./configuration -iname "*.yml" -exec cp -- "{}" ./data/casc_configs \;
-	# Restart Jenkins to load configuration.
-	docker-compose restart jenkins || true
 	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"
 	
