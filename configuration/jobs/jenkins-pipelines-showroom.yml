@@ -1,11 +1,11 @@
 jobs:
     - script: >
-        multibranchPipelineJob('guardian-frontend') {
-            displayName('Guardian frontend')
+        multibranchPipelineJob('project-one') {
+            displayName('Jenkins showroom')
             branchSources {
                 git {
-                    id = 'configuration-as-code'
-                    remote('https://github.com/jeremychauvet/guardian-frontend')
+                    id = 'jenkins-pipelines-showroom'
+                    remote('https://github.com/jeremychauvet/jenkins-pipelines-showroom')
                 }
             }
             orphanedItemStrategy {
