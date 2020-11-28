@@ -7,6 +7,16 @@ configuration-as-code:
   restricted: warn
   unknown: warn
 unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+    - defaultBuildDiscarder:
+        discarder:
+          logRotator:
+            artifactDaysToKeepStr: "5"
+            artifactNumToKeepStr: "5"
+            daysToKeepStr: "10"
+            numToKeepStr: "10"
   themeManager:
     disableUserThemes: true
     theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
