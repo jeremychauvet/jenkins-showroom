@@ -5,3 +5,4 @@ docker-plugin
 job-dsl
 github
 promoted-builds
+build-discarder
