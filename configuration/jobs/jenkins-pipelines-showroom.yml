@@ -1,14 +1,14 @@
 jobs:
-  - script: >
-      job("jenkins-showroom") {
-        displayName('Jenkins showroom')
-        description('Job used to demonstrate Jenkins pipelines.')
-        keepDependencies(false)
-        disabled(false)
-        concurrentBuild(false)
-        branchSources {
+    - script: >
+        multibranchPipelineJob('jenkins-showroom') {
+            displayName('jenkins-showroom')
+            description('Job used to demonstrate Jenkins pipelines.')
+            keepDependencies(false)
+            disabled(false)
+            concurrentBuild(false)
+            branchSources {
                 git {
-                    id = 'jenkins-pipelines-showroom'
+                    id = 'configuration-as-code'
                     remote('https://github.com/jeremychauvet/jenkins-pipelines-showroom')
                 }
             }
@@ -17,4 +17,4 @@ jobs:
                     numToKeep(5)
                 }
             }
-      }
+        }
