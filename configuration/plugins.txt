@@ -6,3 +6,5 @@ job-dsl
 github
 promoted-builds
 build-discarder
+workflow-multibranch
+role-strategy
