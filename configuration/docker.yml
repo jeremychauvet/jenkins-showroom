@@ -8,7 +8,7 @@ jenkins:
         templates:
           - labelString: "docker-agent"
             dockerTemplateBase:
-              image: "jenkins/slave"
+              image: "jenkins/agent:latest-stretch-jdk11"
             remoteFs: "/home/jenkins/agent"
             connector:
               attach:
