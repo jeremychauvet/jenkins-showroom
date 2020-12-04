@@ -1,11 +1,6 @@
 jobs:
     - script: >
-        multibranchPipelineJob('jenkins-showroom') {
-            displayName('jenkins-showroom')
-            description('Job used to demonstrate Jenkins pipelines.')
-            keepDependencies(false)
-            disabled(false)
-            concurrentBuild(false)
+        pipelineJob('jenkins-showroom') {
             branchSources {
                 git {
                     id = 'configuration-as-code'
