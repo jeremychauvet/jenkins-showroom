@@ -39,5 +39,13 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
+# Jenkins related files.
+[*.groovy]
+indent_style = space
+indent_size = 2
+[Jenkinsfile]
+indent_style = space
+indent_size = 2
+
 [COMMIT_EDITMSG]
 max_line_length = 0
