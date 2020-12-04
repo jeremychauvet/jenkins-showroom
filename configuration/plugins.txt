@@ -8,3 +8,4 @@ promoted-builds
 build-discarder
 workflow-multibranch
 role-strategy
+ws-cleanup
