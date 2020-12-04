@@ -7,7 +7,7 @@ build:
 
 start: clean configure build
 	# Clean stopped containers, old volumes.
-	docker system prune -f 
+	docker system prune -f
 	# Launch stack.
 	docker-compose up -d
 	docker-compose logs -ft
@@ -15,7 +15,7 @@ start: clean configure build
 stop:
 	docker-compose down
 
-reset: 
+reset:
 	docker-compose down
 	rm -fr ./data
 	@echo "Docker stack and data folder wiped."
@@ -25,7 +25,8 @@ clean:
 
 configure:
 	# Create Jenkins configuration folder and copy configuration into.
-	@mkdir -p ./data/casc_configs
+	@mkdir -p ./data/casc_configs/jobs
 	@cp ./configuration/*.yml ./data/casc_configs
+	@cp ./configuration/jobs/*.groovy ./data/casc_configs/jobs/
 	@find ./configuration -iname "*.yml" -exec cp -- "{}" ./data/casc_configs \;
 	@echo "Configuration file copied, you can now reload existing configuration on Jenkins interface (administrate Jenkins > configuration as code)"
