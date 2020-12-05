@@ -32,15 +32,18 @@ This will :
 2. Add plugins you choose to install.
 3. Launch container and map volume and ports.
 
-> On first launch, you'll be ask to unlock Jenkins and eventually create the first admin user. 
-
 ## How to
+
+### Login
+
+- User : admin
+- password : 1234
 
 ### How to add plugins
 
 In Dockerfile, we use Cloudbee recommanded way to install plugin : `install-plugins.sh`
 
-You can add plugin id you want after the plugins already given. Then, launch command `make build` to build image and get and output like this : 
+You can add plugin id you want after the plugins already given. Then, launch command `make build` to build image and get and output like this :
 
 ```bash
 jchauvet@macbookpro jenkins-showroom % make build
@@ -91,11 +94,11 @@ In Makefile, please change `JENKINS_VERSION` value to the desired.
 
 ## Roadmap
 
-Roadmap can be found on Github : https://github.com/jeremychauvet/jenkins-showroom/projects/1
+Roadmap can be found on Github : <https://github.com/jeremychauvet/jenkins-showroom/projects/1>
 
 ## Usefull links
 
-- Jenkins changelog : https://www.jenkins.io/changelog/
-- Jenkins roadmap : https://www.jenkins.io/project/roadmap/
-- Docker image : https://hub.docker.com/r/jenkins/jenkins/tags
-- Pipeline syntax : https://www.jenkins.io/doc/book/pipeline/syntax/
+- Jenkins changelog : <https://www.jenkins.io/changelog/>
+- Jenkins roadmap : <https://www.jenkins.io/project/roadmap/>
+- Docker image : <https://hub.docker.com/r/jenkins/jenkins/tags>
+- Pipeline syntax : <https://www.jenkins.io/doc/book/pipeline/syntax/>
