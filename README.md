@@ -1,6 +1,6 @@
 # Jenkins showroom
 
-This repository is a sandbox for testing new Jenkins concepts and plugins.
+This repository is a sandbox to test new Jenkins concepts and plugins.
 
 ## Sub-projects
 
