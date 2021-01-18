@@ -6,19 +6,19 @@ This repository is a sandbox to test new Jenkins concepts and plugins.
 
 ### Configuration as code
 
--> AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
+AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
 
 Read more [here](./docs/casc/README.md)
 
 ### Job DSL
 
--> Manage Job configuration with code and "configuration as code" plugin.
+Manage Job configuration with code and "configuration as code" plugin.
 
 Read more [here](./docs/job-dsl/README.md)
 
 ### CLI
 
--> Manage Jenkins in headless with Jenkins CLI.
+Manage Jenkins in headless with Jenkins CLI.
 
 Read more [here](./docs/cli/README.md)
 
