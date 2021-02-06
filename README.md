@@ -7,6 +7,7 @@ This repository is a sandbox to test new Jenkins concepts and plugins.
 - [Configuration as code](./docs/casc/README.md) : AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
 - [Job DSL](./docs/job-dsl/README.md) : Manage Job configuration with code and "configuration as code" plugin.
 - [CLI](./docs/cli/README.md) : Manage Jenkins in headless with Jenkins CLI.
+- [YAML pipelines](./docs/yaml-pipeline/README.md) : write pipelines in YAML.
 
 ## Installation
 
