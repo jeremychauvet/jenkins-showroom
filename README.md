@@ -4,23 +4,9 @@ This repository is a sandbox to test new Jenkins concepts and plugins.
 
 ## Sub-projects
 
-### Configuration as code
-
-AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
-
-Read more [here](./docs/casc/README.md)
-
-### Job DSL
-
-Manage Job configuration with code and "configuration as code" plugin.
-
-Read more [here](./docs/job-dsl/README.md)
-
-### CLI
-
-Manage Jenkins in headless with Jenkins CLI.
-
-Read more [here](./docs/cli/README.md)
+- [Configuration as code](./docs/casc/README.md) : AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
+- [Job DSL](./docs/job-dsl/README.md) : Manage Job configuration with code and "configuration as code" plugin.
+- [CLI](./docs/cli/README.md) : Manage Jenkins in headless with Jenkins CLI.
 
 ## Installation
 
@@ -39,7 +25,7 @@ This will :
 - User : admin
 - password : 1234
 
-### How to add plugins
+### Add plugins
 
 In Dockerfile, we use Cloudbee recommanded way to install plugin : `install-plugins.sh`
 
@@ -88,7 +74,7 @@ Successfully built 5864c87171fa
 Successfully tagged jenkins:showroom
 ```
 
-### How to upgrade Jenkins version
+### Upgrade Jenkins version
 
 In Makefile, please change `JENKINS_VERSION` value to the desired.
 
