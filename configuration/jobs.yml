@@ -1,2 +1,3 @@
 jobs:
-    - file: /var/jenkins_home/casc_configs/jobs/jenkins-pipelines-showroom.groovy
+    - file: /var/jenkins_home/casc_configs/jobs/groovy-sample.groovy
+    - file: /var/jenkins_home/casc_configs/jobs/yaml-sample.groovy

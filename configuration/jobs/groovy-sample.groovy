@@ -1,4 +1,4 @@
-pipelineJob('jenkins-showroom') {
+pipelineJob('Groovy sample') {
   definition {
     cpsScm {
       scm {
@@ -8,7 +8,7 @@ pipelineJob('jenkins-showroom') {
           }
           branch('main')
         }
-        scriptPath('project-one/Jenkinsfile')
+        scriptPath('groovy/Jenkinsfile')
       }
       lightweight()
     }
