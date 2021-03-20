@@ -2,6 +2,8 @@
 
 This repository is a sandbox to test new Jenkins concepts and plugins.
 
+![ghost preview](docs/hero.png)
+
 ## Sub-projects
 
 - [Configuration as code](./docs/casc/README.md) : AKA "Jenkins as code": manage your Jenkins from configuration to jobs only with code.
@@ -85,7 +87,7 @@ Roadmap can be found on Github : <https://github.com/jeremychauvet/jenkins-showr
 
 ## Usefull links
 
-- Jenkins changelog : <https://www.jenkins.io/changelog/>
-- Jenkins roadmap : <https://www.jenkins.io/project/roadmap/>
-- Docker image : <https://hub.docker.com/r/jenkins/jenkins/tags>
-- Pipeline syntax : <https://www.jenkins.io/doc/book/pipeline/syntax/>
+- [Jenkins changelog](https://www.jenkins.io/changelog/)
+- [Jenkins roadmap](https://www.jenkins.io/project/roadmap/)
+- [Docker image](https://hub.docker.com/r/jenkins/jenkins/tags)
+- [Pipeline syntax](https://www.jenkins.io/doc/book/pipeline/syntax/)
