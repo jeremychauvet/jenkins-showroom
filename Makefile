@@ -1,6 +1,6 @@
 .PHONY: build start stop reset configure clean
 
-JENKINS_VERSION=2.278
+JENKINS_VERSION=2.284
 
 build:
 	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
