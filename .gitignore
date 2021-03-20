@@ -3,6 +3,7 @@ data/
 
 # IDE.
 .idea
+.vscode
 
 # Jenkins CLI.
 jenkins-cli.jar
