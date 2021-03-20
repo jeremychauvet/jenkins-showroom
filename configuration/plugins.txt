@@ -10,3 +10,4 @@ workflow-multibranch
 role-strategy
 ws-cleanup
 pipeline-as-yaml
+authorize-project
