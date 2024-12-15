@@ -1,9 +1,7 @@
 .PHONY: build start stop reset configure clean
 
-JENKINS_VERSION=2.287
-
 build:
-	docker-compose build --build-arg JENKINS_VERSION=$(JENKINS_VERSION)
+	docker-compose build
 
 start: clean configure build
 	# Clean stopped containers, old volumes.

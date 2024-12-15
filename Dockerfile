@@ -1,5 +1,4 @@
-ARG JENKINS_VERSION
-FROM jenkins/jenkins:${JENKINS_VERSION}-slim
+FROM jenkins/jenkins:2.489-alpine
 # Set environment variable for configuration as code plugin.
 ENV CASC_JENKINS_CONFIG=$JENKINS_HOME/casc_configs
 # Install plugins.
