@@ -3,8 +3,6 @@ services:
   jenkins:
     build:
       context: .
-      args:
-        - JENKINS_VERSION=${JENKINS_VERSION}
     image: jenkins:showroom
     user: "${UID}:${GID}"
     ports:
